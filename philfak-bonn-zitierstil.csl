@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="note" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" demote-non-dropping-particle="never" page-range-format="expanded" default-locale="de-DE">
+  <info>
+    <title>Universität Bonn | Philosophische Fakultät</title>
+    <id>https://github.com/Jean-Haffner/csl-bonn</id>
+    <link href="https://github.com/Jean-Haffner/csl-bonn" rel="self"/>
+    <link rel="documentation" href="https://www.philosophie.uni-bonn.de/studium/dateien/empfehlungen-zum-verfassen-wissenschaftlicher-arbeiten-1.pdf" xml:lang="de"/>
+    <author>
+      <name>Jean Haffner</name>
+    </author>
+    <category citation-format="note"/>
+    <category field="philosophy"/>
+    <updated>2025-05-02T00:00:00+00:00</updated>
+    <summary xml:lang="de">Diese Datei enthält eine inoffizielle Version des Zitierstils der Philosophische Fakultät der Universität Bonn. (Version 1)</summary>
+  </info>
+
+  <locale xml:lang="de">
+    <terms>
+      <term name="accessed">Zugriff</term>
+      <term name="editor" form="short">Hg.</term>
+      <term name="et-al">u.a.</term>
+      <term name="anonymous">o.A.</term>
+      <term name="no date">o.J.</term>
+      <term name="no-place">o.O.</term>
+      <term name="page" form="short">S. </term>
+      <term name="page-range-delimiter">-</term>
+      <term name="edition" form="short">Aufl.</term>
+      <term name="volume" form="short">Bd.</term>
+      <term name="number-of-volumes" form="short">Bde.</term>
+    </terms>
+  </locale>
+
+  <macro name="author-short">
+    <names variable="author">
+      <name form="short" initialize-with="." delimiter=", " name-as-sort-order="all"/>
+    </names>
+  </macro>
+
+  <macro name="author-full">
+    <names variable="author">
+      <name form="long" delimiter="; " name-as-sort-order="all"/>
+    </names>
+  </macro>
+
+  <macro name="issued">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="year" form="long"/>
+        </date>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="accessed">
+    <choose>
+      <if variable="accessed">
+        <date variable="accessed">
+          <date-part name="day" form="numeric" suffix="."/>
+          <date-part name="month" form="numeric" prefix="." suffix="."/>
+          <date-part name="year" form="long"/>
+        </date>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="pages">
+    <text variable="page"/>
+  </macro>
+
+  <macro name="short-note">
+    <group delimiter=" " prefix="(" suffix=")">
+      <text macro="author-short"/>
+        <text macro="issued"/>
+        <text macro="pages" prefix=": "/>
+    </group>
+  </macro>
+
+  <citation>
+    <layout delimiter="; " suffix=".">
+      <text macro="short-note"/>
+    </layout>
+  </citation>
+
+  <macro name="title">
+    <choose>
+      <if type="chapter paper-conference entry-dictionary entry-encyclopedia" match="any">
+        <text variable="title" prefix="„" suffix="“"/>
+      </if>
+      <else>
+        <text variable="title" font-style="italic"/>
+      </else>
+    </choose>
+  </macro>
+
+  <macro name="container-title">
+    <choose>
+      <if type="article-journal article-magazine article-newspaper" match="any">
+        <text variable="container-title" font-style="italic"/>
+      </if>
+      <else>
+        <text variable="container-title"/>
+      </else>
+    </choose>
+  </macro>
+
+  <macro name="doi">
+    <choose>
+      <if variable="DOI">
+      <text variable="DOI" prefix=" DOI: " suffix="."/>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="url">
+    <choose>
+      <if variable="URL">
+        <text variable="URL" prefix="URL: " suffix="."/>
+      </if>
+    </choose>
+  </macro>
+
+  <macro name="editor">
+    <names variable="editor">
+      <label form="short" suffix=" "/>
+      <name and="text" delimiter=", " initialize-with="." name-as-sort-order="all"/>
+    </names>
+  </macro>
+
+  <macro name="publication-info">
+    <choose>
+      <if variable="publisher-place publisher">
+        <text variable="publisher-place" suffix=": "/>
+      </if>
+      <else-if variable="publisher-place">
+        <text variable="publisher-place" suffix=" "/>
+      </else-if>
+    </choose>
+    <text variable="publisher" suffix=" "/>
+    <text macro="issued"/>
+  </macro>
+
+  <macro name="publication-details">
+    <group delimiter=", ">
+      <group>
+        <choose>
+          <if is-numeric="edition">
+            <text variable="edition"/>
+            <label variable="edition" form="short" prefix=" "/>
+          </if>
+          <else>
+            <text variable="edition"/>
+          </else>
+        </choose>
+      </group>
+      <group>
+        <label variable="volume" form="short"/>
+        <text variable="volume" prefix=" "/>
+      </group>
+      <group>
+        <label variable="number-of-volumes" form="short"/>
+        <text variable="number-of-volumes" prefix=" "/>
+      </group>
+    </group>
+  </macro>
+
+<bibliography et-al-min="4" et-al-use-first="1" hanging-indent="true">
+  <sort>
+    <key variable="author"/>
+    <key variable="issued"/>
+  </sort>
+  <layout suffix=".">
+    <text macro="author-full" suffix=": "/>
+    <group delimiter=". ">
+      <text macro="title"/>
+      <choose>
+        <if type="chapter paper-conference" match="any">
+          <group delimiter=". ">
+            <text term="in" text-case="capitalize-first" suffix=": "/>
+            <text macro="editor"/>
+            <text macro="container-title" font-style="italic"/>
+            <text variable="page" prefix=", " suffix=""/>
+          </group>
+        </if>
+        <else-if type="article-journal">
+          <text macro="container-title"/>
+          <group delimiter="/">
+            <text variable="volume"/>
+            <text variable="issue"/>
+          </group>
+          <date variable="issued" prefix=" (" suffix=")">
+            <date-part name="year"/>
+          </date>
+          <choose>
+            <if variable="page">
+              <text variable="page" prefix=", "/>
+            </if>
+          </choose>
+        </else-if>
+        <else-if type="webpage">
+          <group delimiter=". ">
+            <text variable="container-title" font-style="italic"/>
+            <text variable="URL"/>
+            <date variable="accessed" prefix="(Zugriff: " suffix=")">
+              <date-part name="day"/>
+              <date-part name="month"/>
+              <date-part name="year"/>
+            </date>
+          </group>
+        </else-if>
+        <else>
+          <text macro="publication-details"/>
+          <text macro="publication-info"/>
+        </else>
+      </choose>
+      <text macro="doi"/>
+    </group>
+  </layout>
+</bibliography>
+
+</style>
