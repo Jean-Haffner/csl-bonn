@@ -1,5 +1,7 @@
 ### Universität Bonn | Philosophische Fakultät
-⬇️ [CSL-Stil herunterladen](https://github.com/Jean-Haffner/csl-bonn/raw/main/philfak-bonn-zitierstil.csl)
+⬇️ [CSL-Stil herunterladen](https://github.com/Jean-Haffner/csl-bonn/raw/main/philfak-bonn-zitierstil.csl)  - dann oben rechts auf die schaltfläche klicken...
+
+![Alternativtext](https://raw.githubusercontent.com/Jean-Haffner/csl-bonn/refs/heads/main/dl-button.jpg)
 
 ⚠️ ACHTUNG: Die hier bereitgestellte Stil-Vorlage kann keine adequate Darstellung entsprechend den aktuellen Richtlinien der Fakultät garantieren.
 Die Formatierung ist deshalb stets selbstständig zu überprüfen!
