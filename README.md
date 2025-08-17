@@ -13,3 +13,7 @@ Die Formatierung ist deshalb stets selbstständig zu überprüfen!
 
 ### Open-Source Literaturverwaltungsprogramm
 → https://www.zotero.org
+
+#### 💡 Tipp: Zu jeder veröffentlichten Quelle gibt es bereits einen Datensatz
+Mit dem Plug-In "Zotero Connector" können hochwertige Metadaten direkt aus dem Katalog der Deutschen Nationalbibliothek importiert werden.  
+→ https://katalog.dnb.de
