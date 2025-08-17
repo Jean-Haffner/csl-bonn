@@ -14,7 +14,7 @@ Die Formatierung ist deshalb stets selbstständig zu überprüfen!
 ### Open-Source Literaturverwaltungsprogramm
 → https://www.zotero.org
 
-#### 💡 Tipp: Zu jeder veröffentlichten Quelle gibt es bereits einen Datensatz
+#### 💡 Tipp: Zu jeder veröffentlichten Quelle gibt es bereits einen vollständigen Datensatz
 Die Deutsche Nationalbibliothek ist die zentrale Archivbibliothek Deutschlands. 
 Mit dem Plug-In "Zotero Connector" können hochwertige Metadaten direkt aus dem Katalog der Deutschen Nationalbibliothek importiert werden.  
 → https://katalog.dnb.de
