@@ -17,7 +17,7 @@ Die Formatierung ist deshalb stets selbstständig zu überprüfen!
 #### 💡 Tipp: Zu jeder veröffentlichten Quelle gibt es bereits einen vollständigen Datensatz
 Die Deutsche Nationalbibliothek ist die zentrale Archivbibliothek Deutschlands. 
 Mit dem Plug-In "Zotero Connector" können hochwertige Metadaten direkt aus dem Katalog der Deutschen Nationalbibliothek importiert werden.  
-→ https://katalog.dnb.de
+→ https://portal.dnb.de
 
 ---
 [Stand: SoSe25 / J.Haffner]
