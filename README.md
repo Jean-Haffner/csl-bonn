@@ -22,6 +22,6 @@ Mit dem Plug-In "Zotero Connector" können hochwertige Metadaten direkt aus dem 
 ---
 [Stand: SoSe25 / J.Haffner]
 
-##### Update vom 17.02.2026: Der Verlag wird nicht länger automatisch eingebunden!  
-D.h. aus "Ort: Verlag Jahreszahl." wird "Ort Jahreszahl.".  
-Beide Varianten sind erlaubt - es bleibt eine Frage der individuellen Präferenz.  
+- ##### Update vom 17.02.2026: Der Verlag wird nicht länger automatisch eingebunden!
+  D.h. aus "Ort: Verlag Jahreszahl." wird "Ort Jahreszahl.".  
+  Beide Varianten sind erlaubt - es bleibt eine Frage der individuellen Präferenz.  
