@@ -130,6 +130,15 @@
 
   <macro name="publication-info">
     <choose>
+      <if variable="publisher-place">
+        <text variable="publisher-place" suffix=": "/>
+      </if>
+    </choose>
+    <text macro="issued"/>
+  </macro>
+
+  <macro name="publication-info-publisher">
+    <choose>
       <if variable="publisher-place publisher">
         <text variable="publisher-place" suffix=": "/>
       </if>
